@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Refleksomierzacz</title>
+<style>
+  #game-area {
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  #stats-panel {
+    display: none;
+  }
+  button {
+    margin: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div id="game-area">Kliknij mnie!</div>
+<button id="start">Start</button>
+<button id="stop" disabled>Stop</button>
+
+<div id="stats-panel">
+  <p id="min-time">Najkrótszy czas reakcji: </p>
+  <p id="max-time">Najdłuższy czas reakcji: </p>
+  <p id="avg-time">Średni czas reakcji: </p>
+</div>
+
+<script src="refleksomierzacz.js"></script>
+</body>
+</html>
